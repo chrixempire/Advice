@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.attribution { font-size: 11px; text-align: center; 
+    margin-top: 50px;
+    color: var(--light-cyan);
+    font-size: 20px;
+}
+.attribution a { 
+color: hsl(228, 65%, 62%);
+transition: color 0.3s ease-in-out;
+}
+.attribution a:hover{
+    color:hsl(228, 41%, 40%);
+}
+.container picture::before{
+    content: "";
+    width: 42%;
+    height: 1px;
+    background-color: var(--light-cyan);
+    right: 1.5rem;
+    bottom: 4.8rem;
+    position: absolute;
+    display: block;
+    z-index: 99;
+    
+}
+.container picture::after{
+    content: "";
+    width: 41%;
+    height: 1px;
+    background-color: var(--light-cyan);
+    left: 25px;
+    bottom: 4.8rem;
+    position: absolute;
+    display: block;
+
+}
+:root{
+--light-cyan: hsl(193, 38%, 86%);
+--neon-green: hsl(150, 100%, 66%);
+--grayish-blue: hsl(217, 19%, 38%);
+--dark-grayish-blue: hsl(217, 19%, 24%);
+--dark-blue: hsl(218, 23%, 16%);
+}
+img{
+    max-width: 100%;
+  
+}
+body{
+    height:calc(100vh - 0.1px);
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.25rem;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--grayish-blue);
+    position: relative;
+ 
+}
+.container h1{
+    color: var(--neon-green);
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 800px;
+    letter-spacing: 2px;
+
+
+}
+.container button{
+    border: none;
+    outline: none;
+    height: 70px;
+    width: 70px;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    bottom: -30px;
+    
+    
+
+}
+button:hover{
+    background-color:hsl(150, 95%, 53%) ;
+
+}
+.container picture img{
+    margin-bottom: 40px;
+}
+.container p{
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    color: var(--light-cyan);
+}
+@media (min-width : 500px) {
+    .container{
+        max-width: 480px;
+    }
+}
+@media screen  and (max-width : 600px){
+    .container picture::before{
+        content: "";
+        width: 40%;
+        height: 1px;
+        background-color: var(--light-cyan);
+        right: 1.1rem;
+        bottom: 4.8rem;
+        position: absolute;
+        display: block;
+        z-index: 99;
+        
+    }
+    .container picture::after{
+        content: "";
+        width: 40%;
+        height: 1px;
+        background-color: var(--light-cyan);
+        left: 20px;
+        bottom: 4.8rem;
+        position: absolute;
+        display: block;
+    
+    }
+    .container p{
+        font-size: 22px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: var(--light-cyan);
+    }
+    .attribution { font-size: 11px; text-align: center; 
+        margin-top: 50px;
+        color: var(--light-cyan);
+        font-size: 11px;
+    }
+    .attribution a { 
+    color: hsl(228, 65%, 62%);
+    transition: color 0.3s ease-in-out;
+    }
+    .attribution a:hover{
+        color:hsl(228, 41%, 40%);
+    }
+}
